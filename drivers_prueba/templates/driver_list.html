@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}Lista de conductores{% endblock %}
+
+{% block content %}
+	<div class="container text-center">
+	<h1>Lista de Conductores</h1>
+	<div class="d-flex flex-wrap gap-5 justify-content-center">
+	{% for driver in drivers %}
+	<div class="card" style="width: 18rem;">
+	<div class="card-body">
+		<h5 class="card-title">{{driver.title}}</h5>
+		<h6 class="card-text text-truncate">{{driver.Nationality}}</h6>
+		<a href="{% url 'driver_detail' driver.id %}"
+			class="btn btn-primary">Ver Detalles</a>
+		</div>
+	</div>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

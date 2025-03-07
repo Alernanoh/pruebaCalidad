@@ -1,0 +1,17 @@
+{
+	"include": [
+		"drivers",
+		"drivers_prueba"
+	],
+	"exclude": [
+		"**/migrations",
+		"**/__pycache__",
+		"venv"
+	],
+	"venvPath": "../",
+	"venv": "venv",
+	"pythonVersion": "3.13.2",
+	"typeCheckingMode": "basic",
+	"reportMissingImports": true,
+	"reportMissingTypeStubs": false
+}
