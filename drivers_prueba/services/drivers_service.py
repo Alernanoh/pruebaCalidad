@@ -11,8 +11,8 @@ def get_drivers():
         return response.json()
     return []
 
-def get_driver(id):
-    response = requests.get(f"{API_URL}/{id}")
+def get_driver(driverId):
+    response = requests.get(f"{API_URL}/{driverId}")
     if response.status_code == 200:
         return response.json()
     return []
